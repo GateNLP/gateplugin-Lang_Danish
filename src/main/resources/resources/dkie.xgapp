@@ -1,18 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <gate.util.persistence.GateApplication>
   <urlList class="gate.util.persistence.CollectionPersistence">
     <localList>
-      <gate.util.persistence.PersistenceManager-URLHolder>
-        <urlString>$relpath$../../Stanford_CoreNLP</urlString>
-      </gate.util.persistence.PersistenceManager-URLHolder>
-      <gate.util.persistence.PersistenceManager-URLHolder>
-        <urlString>$relpath$..</urlString>
-      </gate.util.persistence.PersistenceManager-URLHolder>
-      <gate.util.persistence.PersistenceManager-URLHolder>
-        <urlString>$relpath$../../ANNIE</urlString>
-      </gate.util.persistence.PersistenceManager-URLHolder>
-      <gate.util.persistence.PersistenceManager-URLHolder>
-        <urlString>$relpath$../../Tools</urlString>
-      </gate.util.persistence.PersistenceManager-URLHolder>
+      <gate.creole.Plugin-Maven>
+        <group>uk.ac.gate.plugins</group>
+        <artifact>stanford-corenlp</artifact>
+        <version>8.5-SNAPSHOT</version>
+      </gate.creole.Plugin-Maven>
+      <gate.creole.Plugin-Maven>
+        <group>uk.ac.gate.plugins</group>
+        <artifact>lang-danish</artifact>
+        <version>8.5-SNAPSHOT</version>
+      </gate.creole.Plugin-Maven>
+      <gate.creole.Plugin-Maven>
+        <group>uk.ac.gate.plugins</group>
+        <artifact>annie</artifact>
+        <version>8.5-SNAPSHOT</version>
+      </gate.creole.Plugin-Maven>
+      <gate.creole.Plugin-Maven>
+        <group>uk.ac.gate.plugins</group>
+        <artifact>tools</artifact>
+        <version>8.5-SNAPSHOT</version>
+      </gate.creole.Plugin-Maven>
     </localList>
     <collectionType>java.util.ArrayList</collectionType>
   </urlList>
@@ -22,71 +31,71 @@
         <gate.util.persistence.PRPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>gate.creole.annotdelete.AnnotationDeletePR</resourceType>
           <resourceName>Document Reset</resourceName>
           <initParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.PRPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>danish.DanishTokeniser</resourceType>
           <resourceName>DKIE Tokenizer</resourceName>
           <initParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>gate.creole.splitter.SentenceSplitter</resourceType>
           <resourceName>Danish Sentence Splitter</resourceName>
           <initParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>danish.DanishPOSTagger</resourceType>
           <resourceName>Danish POS tagger</resourceName>
           <initParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
         <gate.util.persistence.PRPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>gate.creole.gazetteer.FlexibleGazetteer</resourceType>
           <resourceName>DKIE Normalising Gazetteer</resourceName>
@@ -107,17 +116,17 @@
                 <gate.util.persistence.LanguageAnalyserPersistence>
                   <runtimeParams class="gate.util.persistence.MapPersistence">
                     <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-                    <localMap/>
+                    <localMap />
                   </runtimeParams>
                   <resourceType>danish.DanishGazetteer</resourceType>
                   <resourceName>Danish Gazetteers</resourceName>
                   <initParams class="gate.util.persistence.MapPersistence">
                     <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-                    <localMap/>
+                    <localMap />
                   </initParams>
                   <features class="gate.util.persistence.MapPersistence">
                     <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-                    <localMap/>
+                    <localMap />
                   </features>
                 </gate.util.persistence.LanguageAnalyserPersistence>
               </entry>
@@ -125,29 +134,29 @@
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.PRPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>danish.DanishNER</resourceType>
           <resourceName>Danish NER</resourceName>
           <initParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>gate.creole.Transducer</resourceType>
           <resourceName>DKIE NE preprocessing</resourceName>
@@ -164,13 +173,13 @@
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>gate.creole.gazetteer.DefaultGazetteer</resourceType>
           <resourceName>DKIE udenlandsk gazetteer</resourceName>
@@ -187,23 +196,23 @@
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
         <gate.util.persistence.LanguageAnalyserPersistence>
           <runtimeParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </runtimeParams>
           <resourceType>gate.creole.ANNIETransducer</resourceType>
           <resourceName>ANNIE NE Transducer</resourceName>
           <initParams class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </initParams>
           <features class="gate.util.persistence.MapPersistence">
             <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-            <localMap/>
+            <localMap />
           </features>
         </gate.util.persistence.LanguageAnalyserPersistence>
       </localList>
@@ -213,7 +222,7 @@
     <resourceName>DKIE</resourceName>
     <initParams class="gate.util.persistence.MapPersistence">
       <mapType>gate.util.SimpleFeatureMapImpl</mapType>
-      <localMap/>
+      <localMap />
     </initParams>
     <features class="gate.util.persistence.MapPersistence">
       <mapType>gate.util.SimpleFeatureMapImpl</mapType>
@@ -226,3 +235,5 @@
     </features>
   </application>
 </gate.util.persistence.GateApplication>
+
+
