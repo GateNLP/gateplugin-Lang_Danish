@@ -16,6 +16,9 @@
 	<groupId>uk.ac.gate.plugins</groupId>
 	<artifactId>lang-danish</artifactId>
 	<version>8.5-SNAPSHOT</version>
+	
+	<name>Language: Danish</name>
+	<description>Support for processing Danish documents</description>
 
 	<licenses>
 		<license>
