@@ -16,7 +16,7 @@ import gate.creole.metadata.CreoleParameter;
 import gate.creole.metadata.CreoleResource;
 import gate.stanford.NER;
 
-import java.net.URL;
+import gate.creole.ResourceReference;
 
 @CreoleResource(name = "Danish NER",
     comment = "Stanford NER for Danish")
@@ -27,7 +27,7 @@ public class DanishNER extends NER {
   @Override
   @CreoleParameter(comment = "Path to the tagger's model file",
   	defaultValue = "resources/ner/da01.model.gz")
-  public void setModelFile(URL modelFile) {
+  public void setModelFile(ResourceReference modelFile) {
     super.setModelFile(modelFile);
   }
 }

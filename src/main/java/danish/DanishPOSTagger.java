@@ -13,8 +13,7 @@
 
 package danish;
 
-import java.net.URL;
-
+import gate.creole.ResourceReference;
 import gate.creole.metadata.CreoleParameter;
 import gate.creole.metadata.CreoleResource;  
 
@@ -29,7 +28,7 @@ public class DanishPOSTagger extends Tagger {
   @Override
   @CreoleParameter(comment = "Path to the tagger's model file",
   	defaultValue = "resources/pos/ddt-pos.model")
-  public void setModelFile(URL modelFile) {
+  public void setModelFile(ResourceReference modelFile) {
     super.setModelFile(modelFile);
   }
 }
