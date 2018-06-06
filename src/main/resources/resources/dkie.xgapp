@@ -5,12 +5,12 @@
       <gate.creole.Plugin-Maven>
         <group>uk.ac.gate.plugins</group>
         <artifact>stanford-corenlp</artifact>
-        <version>8.5</version>
+        <version>8.5.1</version>
       </gate.creole.Plugin-Maven>
       <gate.creole.Plugin-Maven>
         <group>uk.ac.gate.plugins</group>
         <artifact>lang-danish</artifact>
-        <version>8.5</version>
+        <version>8.5.1</version>
       </gate.creole.Plugin-Maven>
       <gate.creole.Plugin-Maven>
         <group>uk.ac.gate.plugins</group>
@@ -165,9 +165,9 @@
             <localMap>
               <entry>
                 <string>grammarURL</string>
-                <gate.util.persistence.PersistenceManager-URLHolder>
-                  <urlString>$relpath$pre-ner/danish.jape</urlString>
-                </gate.util.persistence.PersistenceManager-URLHolder>
+                <gate.util.persistence.PersistenceManager-RRPersistence>
+                  <uriString>$relpath$pre-ner/danish.jape</uriString>
+                </gate.util.persistence.PersistenceManager-RRPersistence>
               </entry>
             </localMap>
           </initParams>
@@ -188,9 +188,9 @@
             <localMap>
               <entry>
                 <string>listsURL</string>
-                <gate.util.persistence.PersistenceManager-URLHolder>
-                  <urlString>$relpath$gazetteer/global_lists.def</urlString>
-                </gate.util.persistence.PersistenceManager-URLHolder>
+                <gate.util.persistence.PersistenceManager-RRPersistence>
+                  <uriString>$relpath$gazetteer/global_lists.def</uriString>
+                </gate.util.persistence.PersistenceManager-RRPersistence>
               </entry>
             </localMap>
           </initParams>

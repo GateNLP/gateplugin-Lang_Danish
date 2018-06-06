@@ -15,7 +15,7 @@
 	<!-- this is the description of this plugin -->
 	<groupId>uk.ac.gate.plugins</groupId>
 	<artifactId>lang-danish</artifactId>
-	<version>8.5</version>
+	<version>8.5.1</version>
 	
 	<name>Language: Danish</name>
 	<description>Support for processing Danish documents</description>
@@ -61,7 +61,7 @@
 		<dependency>
 			<groupId>uk.ac.gate.plugins</groupId>
 			<artifactId>stanford-corenlp</artifactId>
-			<version>8.5</version>
+			<version>8.5.1</version>
 			<scope>provided</scope>
 		</dependency>
 
